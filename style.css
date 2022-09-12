@@ -1,8 +1,115 @@
-body {
+body{
+    margin: 0;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.bodyWrapper {
+    min-height: 100vh;
     font-family: "Times New Roman", Georgia, serif;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.sideMargin {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 div#hero {
     background-color: #1F2937;
     color: #F9FAf8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.header .links ul {
+    display: flex;
+    gap: 30px;
+}
+
+.header .links ul li a {
+    background-color: transparent;
+    color: inherit;
+    padding: 8px;
+    border-radius: 4px;
+    transition: 0.7s;
+    transition-timing-function: cubic-bezier(0, 0, 0.26, 1.17);
+}
+.header .links ul li a:hover {
+    background-color: #3882F6;
+}
+.header .links ul li a:active {
+    background-color: #2b6bd19d;
+}
+.hero {
+    padding: 3em 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero .rightSide {
+    background: #80808069;
+    min-width: 400px;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1 0 0%;
+}
+.hero .leftSide {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hero .leftSide .heroTitle {
+    font-size: 48px;
+    font-weight: 900;
+}
+.hero .leftSide .heroDesc {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 10px 0;
+}
+button.heroBtn {
+    background-color: #3882F6;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    cursor: pointer;
+    color: #E5E7EB;
+    font-size: 13px;
+    padding: 6px 24px;
+    text-decoration: none;
+    width: 200px;
+}
+button.heroBtn:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+button.heroBtn:active {
+	position:relative;
+	top:1px;
 }
